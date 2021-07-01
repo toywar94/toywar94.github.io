@@ -1,0 +1,506 @@
+@charset "utf-8";
+body {
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+form,
+fieldset,
+input,
+table,
+tr,
+th,
+td,
+input,
+textarea,
+select,
+button,
+table {
+    font-family: Nanum Gothic, 나눔고딕, dotum, 돋움, 'Malgun Gothic', '맑은 고딕',
+    Tahoma, Geneva, sans-serif;
+    word-break: break-all;
+    font-size: 16px;
+    color: #333333;
+}
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+form,
+fieldset,
+input,
+table,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+ul,
+ol {
+    list-style: none;
+}
+fieldset,
+img {
+    border: 0;
+    vertical-align: top;
+}
+address {
+    font-style: normal;
+}
+p {
+    line-height: 1.2em;
+}
+button {
+    cursor: pointer;
+}
+.ir {
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+    visibility: hidden;
+    z-index: -1;
+}
+img,
+fieldset,
+button,
+iframe,
+input,
+textarea {
+    border: 0;
+}
+hr {
+    display: none;
+}
+ol,
+ul,
+li {
+    list-style: none;
+}
+legend,
+caption {
+    position: absolute;
+    overflow: hidden;
+    text-indent: -3000em;
+}
+/* a-style */
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    text-transform: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.hiddenTitle {
+    position: absolute;
+    left: -1000%;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.off {
+    display: none;
+}
+/* 공통 Class */
+.float_l {
+    float: left;
+    padding-bottom: 10px;
+}
+.float_r {
+    float: right;
+    padding-bottom: 10px;
+}
+.float_l dt,
+.float_l dd,
+.float_r dt,
+.float_r dd {
+    float: left;
+    font-size: 16px;
+}
+.float_l dd,
+.float_r dd {
+    margin-left: 5px;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.blind {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: -1000em;
+    left: 0;
+}
+/* Common Layout */
+#wrap {
+    position: relative;
+    margin: 0 auto;
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: block;
+    background: #fff;
+    border-top: 5px solid #dadada;
+    border-bottom: 1px solid #dfdfdf;
+    z-index: 10;
+}
+header > .cover {
+    margin: 0 auto;
+}
+header > .cover::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+header h1 {
+    display: block;
+    padding: 9px 0;
+}
+header h1 a {
+    display: block;
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+}
+header h1 a span {
+    display: block;
+    font-size: 38px;
+    color: #666;
+}
+header h1 a:hover {
+    color: #666;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+header h1 a:hover span {
+    color: #ff5a5f;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+nav {
+    display: block;
+    margin-top: -5px;
+}
+nav ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+nav ul li {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav ul li a {
+    display: block;
+    width: 100px;
+    padding: 23px 0;
+    border-top: 5px solid #dadada;
+    text-align: center;
+    color: #444;
+    background: #fff;
+}
+nav ul li a:hover {
+    display: block;
+    /* color: #444; */
+    color: #ff5a5f;
+    border-top: 5px solid #ff5a5f;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+nav ul li.on a {
+    display: block;
+    color: #444;
+    border-top: 5px solid #ff5a5f;
+    background: #efefef;
+}
+nav ul li.on a:hover {
+    display: block;
+    color: #ff5a5f;
+    border-top: 5px solid #ff5a5f;
+    background: #efefef;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+nav ul li a span,
+nav ul li.on a span {
+    display: block;
+    color: #888;
+    font-size: 14px;
+}
+
+nav ul li a:hover span,
+nav ul li.on a:hover span {
+    color: #666;
+}
+
+.container {
+    height: 100%;
+    min-height: 600px;
+}
+
+article > h1 {
+    padding: 0 0 20px 10px;
+    border-bottom: 1px solid #dadada;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #666;
+    font-weight: bold;
+}
+article > h1 > em {
+    font-size: 22px;
+    color: #888;
+    font-style: normal;
+    margin-right: 150px;
+}
+.point {
+    color: #ff5a5f;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+p.text {
+    font-size: 16px;
+    line-height: 2em;
+}
+
+footer {
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+    border-top: 1px solid #dadada;
+}
+
+footer p {
+    padding: 30px 10px 30px 0;
+    text-align: center;
+    color: #7d7d7d;
+    font-weight: bold;
+    font-size: 18px;
+}
+footer > p > a {
+    color: #ff5a5f;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #dadada;
+    border-right: none;
+    border-top: none;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+}
+table th {
+    padding: 10px;
+    border-top: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    background-color: #e5e5e5;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+table td {
+    padding: 10px;
+    border-top: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+figure {
+    margin-bottom: 20px;
+}
+figure a img {
+    max-width: 100%;
+    height: auto;
+}
+.textimg {
+    margin: 20px 0;
+}
+.text01 {
+    margin-bottom: 20px;
+    float: left;
+    font-weight: bold;
+}
+.text02 {
+    margin-bottom: 20px;
+    float: right;
+    font-weight: bold;
+}
+.img01 {
+    float: left;
+    margin: 0 20px 10px 0;
+}
+.img02 {
+    float: right;
+    margin: 0 0 10px 20px;
+}
+section {
+    padding: 30px 10px 0 10px;
+    *zoom: 1;
+}
+section:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+section > h1 {
+    margin: 20px 0;
+    font-size: 20px;
+}
+table.info td {
+    text-align: left;
+}
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+    .float_l dt,
+    .float_l dd,
+    .float_r dt,
+    .float_r dd {
+        float: left;
+        font-size: 32px;
+    }
+    #wrap {
+        width: 100%;
+    }
+    article:nth-of-type(1) {
+        margin-top: 300px;
+    }
+    header > .cover {
+        width: 100%;
+    }
+    header h1 a {
+        font-size: 36px;
+    }
+    header h1 a span {
+        font-size: 76px;
+    }
+    nav ul li {
+        width: 25%;
+        font-size: 36px;
+    }
+    nav ul li a {
+        padding: 5px 0;
+        width: 100%;
+        border-bottom: 1px solid #dedfdf;
+    }
+    nav ul li a span,
+    nav ul li.on a span {
+        font-size: 28px;
+    }
+    article > h1 {
+        font-size: 64px;
+    }
+
+    article > h1 > em {
+        font-size: 44px;
+    }
+    .point {
+        display: block;
+        font-size: 32px;
+    }
+    p.text {
+        font-size: 32px;
+    }
+    footer p {
+        font-size: 36px;
+    }
+    section > h1 {
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #wrap {
+        width: 1024px;
+    }
+    article:nth-of-type(1) {
+        margin-top: 150px;
+    }
+    header {
+        min-width: 1024px;
+    }
+    header > .cover {
+        width: 1024px;
+    }
+    header h1 {
+        float: left;
+    }
+    article > h1 > em {
+        margin-right: 150px;
+    }
+    footer {
+        min-width: 1024px;
+    }
+    nav {
+        float: right;
+        margin-top: -5px;
+    }
+    nav ul li a {
+        width: 100px;
+        padding: 23px 0;
+    }
+}

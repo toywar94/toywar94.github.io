@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* 메인 */
+section > ul > li {
+    position: relative;
+    margin-bottom: 50px;
+}
+section > ul > li > div > div {
+    position: relative;
+    padding: 40px;
+    border: 1px solid #dadada;
+}
+section > ul > li > div > div h1 {
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 26px;
+    color: #ff5a5f;
+}
+section > ul > li > div > div ul {
+    margin-bottom: 20px;
+}
+section > ul > li > div > div li {
+    display: block;
+    font-size: 16px;
+    padding-bottom: 10px;
+    line-height: 1.6em;
+}
+section > ul > li > div > div li em {
+    padding-right: 10px;
+    font-style: normal;
+    vertical-align: top;
+    font-weight: bold;
+}
+section > ul > li > div > div li b {
+    padding-right: 20px;
+    font-weight: normal;
+}
+section > ul > li > div > div li b a:hover {
+    color: #ff5a5f;
+}
+section > ul > li > div > div > a {
+    display: inline-block;
+    /* min-width: 200px; */
+    text-align: center;
+    border: 1px solid #ff5a5f;
+    background: #fff;
+    color: #ff5a5f;
+    padding: 20px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+section > ul > li > div > div > a:hover {
+    background: #ff5a5f;
+    border: 1px solid #ff5a5f;
+    color: #fff;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+    section > ul > li > div > div h1 {
+        font-size: 52px;
+    }
+    section > ul > li > div > div li {
+        border-bottom: 1px solid #dedfdf;
+        margin-bottom: 10px;
+        font-size: 38px;
+    }
+    section > ul > li > div > div li:last-of-type {
+        border-bottom: 0 none;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    section > ul > li > div > div li em {
+        display: block;
+        width: 100%;
+        padding-right: 0;
+        font-size: 38px;
+        margin-bottom: 5px;
+    }
+
+    section > ul > li > div > div li b {
+        display: block;
+        word-break: keep-all;
+    }
+    section > ul > li > div > div > a {
+        margin-top: 50px;
+        font-size: 32px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    ul > li > em {
+        position: relative;
+        display: inline-block;
+    }
+    section > ul > li > div > div li em {
+        position: relative;
+        display: inline-block;
+        width: 150px;
+        margin-right: 20px;
+    }
+    section > ul > li > div > div li em::after {
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: ':';
+        display: block;
+    }
+    section > ul > li > div > div li b {
+        display: inline-block;
+        max-width: 722px;
+    }
+}
